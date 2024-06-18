@@ -8,6 +8,10 @@ export default {
     extend: {},
     container:{
       center:true,
+    },
+    backgroundImage:{
+      'photo' :"url('/public/cart.jpg')",
+      'delivery' : "url('/public/pngtree.jpg')"
     }
   },
   plugins: [],

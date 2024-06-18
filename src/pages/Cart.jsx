@@ -14,12 +14,15 @@ export const Cart = () => {
   const handleAdd = ()=>{
     navigate('/Order')
   }
-  const handelShow = ()=>{
-    navigate('/Home')
+  
+  
+    const handelShow = ()=>{
+    navigate('/')
   }
 
   return (
     <>
+    <section className="w-full h-screen bg-photo bg-no-repeat bg-cover bg-center">
     <div className="container flex flex-col items-center pt-20">
     <div className="w-[700px] h-[150px] bg-sky-100 flex gap-5">
         <div className="w-[200px] h-[150px]">
@@ -32,10 +35,11 @@ export const Cart = () => {
         </div>
     </div>
     <div className="flex gap-5">
-    <button onClick={handelShow()} className="p-5 bg-sky-200 mt-5 text-orange-600 font-extrabold hover:bg-orange-400 hover:text-white transition-all">Continue Shopping</button>
-    <button onClick={handleAdd()} className="p-5 bg-sky-200 mt-5 text-orange-600 font-extrabold hover:bg-orange-400 hover:text-white transition-all">Confirm Order</button>
+    <button onClick={()=> handelShow()} className="p-5 bg-sky-200 mt-5 text-orange-600 font-extrabold hover:bg-orange-400 hover:text-white transition-all">Continue Shopping</button>
+    <button onClick={()=> handleAdd()} className="p-5 bg-sky-200 mt-5 text-orange-600 font-extrabold hover:bg-orange-400 hover:text-white transition-all">Confirm Order</button>
     </div>
     </div>
+    </section>
     </>
   )
 }
